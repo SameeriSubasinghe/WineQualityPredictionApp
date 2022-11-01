@@ -1,5 +1,3 @@
-from turtle import color
-from click import style
 import numpy as np 
 import pandas as pd 
 import joblib
