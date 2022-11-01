@@ -9,8 +9,6 @@ import streamlit as st
 from PIL import Image
 
 
-
-
 model = joblib.load(open("wineQualityPrediction.joblib","rb"))
 
 
