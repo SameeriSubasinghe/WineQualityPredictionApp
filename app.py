@@ -23,7 +23,7 @@ def data_preprocessor(df):
 
 
 st.write("""
-# Wine Quality Prediction 
+# Wine Quality Prediction Web App
 """)
 
 
