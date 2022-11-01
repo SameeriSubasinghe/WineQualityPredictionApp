@@ -33,15 +33,6 @@ st.image(image, caption='wine company',use_column_width=True)
 
 st.sidebar.header('User Input Parameters') #user input parameter collection with streamlit side bar
 
-st.sidebar.slider("""
-   <style>
-    {
-       primaryColor="#F63366"
-     }
-   </style>
-""")
-
-
 def get_user_input():
     """
     this function is used to get user input using sidebar slider and selectbox 
