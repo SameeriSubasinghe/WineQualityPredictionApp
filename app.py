@@ -25,7 +25,8 @@ st.write("""
 
 #read in wine image and render with streamlit
 image = Image.open('wine_image3.png')
-st.image(image, caption='wine company',use_column_width=True)
+st.image(image, use_column_width=True)
+
 
 st.sidebar.header('User Input Parameters') #user input parameter collection with streamlit side bar
 
@@ -40,8 +41,7 @@ def get_user_input():
     citric_acid  = st.sidebar.slider('citric acid', 0.0, 1.66, 0.3)
     residual_sugar  = st.sidebar.slider('residual_sugar', 0.6, 65.8, 10.4)
     chlorides  = st.sidebar.slider('chlorides', 0.009, 0.611, 0.211)
-    free_sulfur_dioxide = st.sidebar.slider('free sulfur dioxide', 1, 289, 200)
-    total_sulfur_dioxide = st.sidebar.slider('total sulfur dioxide', 6, 440, 150)
+    free_sulfur_dioxide = st.sidebar.slider('free sulfur dioxide', 1.0000, 7.0000, 4.0000)
     density = st.sidebar.slider('density', 0.98, 1.03, 1.0)
     pH = st.sidebar.slider('pH', 2.72, 4.01, 3.0)
     sulphates = st.sidebar.slider('sulphates', 0.22, 2.0, 1.0)
@@ -54,7 +54,6 @@ def get_user_input():
             'residual_sugar': residual_sugar,
             'chlorides': chlorides,
             'free_sulfur_dioxide': free_sulfur_dioxide,
-            'total_sulfur_dioxide': total_sulfur_dioxide,
             'density': density,
             'pH': pH,
             'sulphates': sulphates,
